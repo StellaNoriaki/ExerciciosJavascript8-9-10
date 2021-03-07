@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 09</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    
+    <header>
+        <h1 id=>Sistema de Nacionalidades</h1>
+    </header> 
+    Sua nacionalidade <input type="text" id="txtnacio">
+    <input type="button" value="Checar" id="button" onclick="check()">
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function check() {
+            let txtnac = document.querySelector("input#txtnacio");
+            let nac = String(txtnac.value);
+            let res = document.querySelector("div#res");
+
+            console.log(`A função ta funcionando`)
+
+            if (nac == "Brasil"){
+                res.innerHTML = `Você é Brasileiro, seu país de origem é: ${nac}`
+            }
+            else {
+                res.innerHTML = `Você é estrangeiro, seu país de origem é ${nac}`
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
